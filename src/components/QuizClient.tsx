@@ -14,7 +14,7 @@ export default function QuizClient({ questions }: { questions: QuizQuestion[] })
   }, [answers, questions]);
 
   if (!questions.length) {
-    return null;
+    return <div className="empty-state">Practice questions for this topic are coming soon.</div>;
   }
 
   return (
@@ -63,15 +63,17 @@ export default function QuizClient({ questions }: { questions: QuizQuestion[] })
         );
       })}
 
-      <div className="card">
-        <h3>
-          Score: {score}/{questions.length}
-        </h3>
-        <p className="muted">
-          {answeredCount === questions.length
-            ? "Quiz complete. Review any explanation that felt unfamiliar."
-            : `${questions.length - answeredCount} question${questions.length - answeredCount === 1 ? "" : "s"} remaining.`}
-        </p>
+      <div className="quiz-summary">
+        <div>
+          <h3>
+            Score: {score}/{questions.length}
+          </h3>
+          <p className="muted" style={{ margin: "4px 0 0" }}>
+            {answeredCount === questions.length
+              ? "Quiz complete. Review any explanation that felt unfamiliar."
+              : `${questions.length - answeredCount} question${questions.length - answeredCount === 1 ? "" : "s"} remaining.`}
+          </p>
+        </div>
         <button className="ghost-button" onClick={() => setAnswers({})} type="button">
           Reset quiz
         </button>

@@ -1,0 +1,13 @@
+---
+pid: 27036
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npx next start"
+started_at: 2026-06-09T19:43:10.244Z
+running_for_ms: 4050009  
+---
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 927ms

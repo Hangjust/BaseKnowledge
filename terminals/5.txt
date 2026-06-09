@@ -1,0 +1,120 @@
+---
+pid: 24520
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Stop-Process -Id 26872 -Force -ErrorAction SilentlyContinue; cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npm run dev"
+started_at: 2026-06-09T16:50:05.578Z
+running_for_ms: 14435012 
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 2s
+ ○ Compiling /physics ...
+ ✓ Compiled /physics in 793ms (614 modules)
+ GET /physics 200 in 1190ms
+ GET /physics 200 in 61ms
+ ✓ Compiled / in 376ms (612 modules)
+ GET / 200 in 628ms
+ ✓ Compiled /physics in 146ms (393 modules)
+ GET /physics 200 in 234ms
+ ○ Compiling /physics/[topicSlug] ...
+ ✓ Compiled /physics/[topicSlug] in 521ms (640 modules)
+ GET /physics/optics 200 in 1278ms
+ GET /physics/optics 200 in 39ms
+ ○ Compiling /physics/[topicSlug]/[mode] ...
+ ✓ Compiled /physics/[topicSlug]/[mode] in 506ms (659 modules)
+ GET /physics/optics/learn 200 in 1173ms
+ GET /physics/optics/play 200 in 40ms
+ GET /physics/optics/practice 200 in 41ms
+ GET /physics/optics/exam 200 in 39ms
+ GET /physics/optics/learn 200 in 36ms
+ ✓ Compiled in 480ms (659 modules)
+ GET /physics/optics/learn 200 in 172ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ TypeError: Cannot read properties of undefined (reading 'number')
+    at TopicLearnView (src\components\physics\TopicLearnView.tsx:29:48)
+  27 |       <header className="physics-chapter-header">
+  28 |         <p className="physics-chapter-eyebrow">
+> 29 |           {meta.title} · Chapter {learnChapter.number}
+     |                                                ^
+  30 |         </p>
+  31 |         <h2 className="physics-chapter-title">{learnChapter.title}</h2>
+  32 |         <p className="physics-chapter-intro">{learnChapter.introduction}</p> {
+  digest: '2830981927'
+}
+ GET /physics/optics/learn 500 in 315ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1354ms (673 modules)
+ GET /physics/optics/learn 200 in 285ms
+ ✓ Compiled in 186ms (418 modules)
+ GET /physics/optics/learn 200 in 127ms
+ GET /physics/optics/play 200 in 353ms
+ ⨯ Error: Could not find the module "C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '1997962878'
+}
+ ○ Compiling /subjects/[subjectId]/[topicSlug] ...
+ ✓ Compiled /subjects/[subjectId]/[topicSlug] in 594ms (691 modules)
+ ⨯ [Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\webpack-runtime.js
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\[topicSlug]\page.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\require.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\load-components.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\utils.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/subjects/physics/thermodynamics'
+}
+ ○ Compiling /_error ...
+ ⨯ [Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\webpack-runtime.js
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\[topicSlug]\page.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\require.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\load-components.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\utils.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/subjects/physics/optics'
+}
+ ✓ Compiled /_error in 1549ms (1038 modules)
+ GET /subjects/physics/thermodynamics 500 in 2988ms
+ GET /subjects/physics/optics?difficulty=Advanced 500 in 1207ms
+ GET /subjects/physics/optics 200 in 1182ms
+ ✓ Compiled /_not-found in 452ms (1043 modules)
+ GET /subjects 404 in 652ms
+ ⨯ Error: Cannot find module './520.js'
+Require stack:
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\webpack-runtime.js
+- C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\_not-found\page.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\require.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\load-components.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\utils.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\swc\options.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\swc\index.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\analysis\parse-module.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\build\analysis\get-page-static-info.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\giolu\Documents\BaseKnowledge\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\physics\[topicSlug]\[mode]\page.js:2:23727)
+    at Object.<anonymous> (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\physics\[topicSlug]\[mode]\page.js:2:23785) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/physics/classical-mechanics/learn'
+}
+ GET /physics/classical-mechanics/learn 500 in 336ms
+

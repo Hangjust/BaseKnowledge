@@ -1,0 +1,7 @@
+---
+pid: 2840
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "npm run dev"
+started_at: 2026-06-08T20:06:12.680Z
+running_for_ms: 830003   
+---

@@ -1,0 +1,109 @@
+---
+pid: 15504
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npx next start"
+started_at: 2026-06-09T19:24:58.359Z
+running_for_ms: 5140013  
+---
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 455ms
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\[topicSlug]\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error: Internal: NoFallbackError
+    at n (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1062)
+    at responseGenerator (C:\Users\giolu\Documents\BaseKnowledge\.next\server\app\subjects\[subjectId]\lab\page.js:2:1918)
+[Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+ ⨯ [Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance which may provide additional details about the nature of the error.] {
+  digest: 'DYNAMIC_SERVER_USAGE'
+}

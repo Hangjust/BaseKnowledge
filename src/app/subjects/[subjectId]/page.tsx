@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import { getPublishedTopicsBySubject, getSubject } from "@/lib/content-store";
+import { notFound, redirect } from "next/navigation";
+import SubjectIcon from "@/components/SubjectIcon";
+import { getPublishedTopicsBySubject } from "@/lib/content-store";
+import { getSubject } from "@/lib/subjects";
 import { subjectIdSchema } from "@/lib/validation";
 
 export default async function SubjectPage({ params }: { params: Promise<{ subjectId: string }> }) {
@@ -17,25 +19,46 @@ export default async function SubjectPage({ params }: { params: Promise<{ subjec
     notFound();
   }
 
+  if (subject.id === "physics") {
+    redirect("/physics");
+  }
+
   const topics = await getPublishedTopicsBySubject(subject.id);
 
   return (
     <main className="page">
-      <section className="section">
-        <p className="eyebrow">Subject</p>
+      <nav className="breadcrumb" aria-label="Breadcrumb">
+        <Link href="/">Home</Link>
+        <span className="breadcrumb-sep">/</span>
+        <span>{subject.name}</span>
+      </nav>
+
+      <section className="topic-header">
+        <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "16px" }}>
+          <SubjectIcon accent={subject.accent} size="sm" subjectId={subject.id} />
+          <p className="eyebrow" style={{ margin: 0 }}>
+            Subject
+          </p>
+        </div>
         <h1>{subject.name}</h1>
         <p className="lead">{subject.description}</p>
       </section>
 
-      <section className="section">
-        <h2>Topics</h2>
+      <section className="section" style={{ paddingTop: 0 }}>
+        <h2 style={{ marginBottom: "20px" }}>Topics</h2>
         {topics.length ? (
-          <div className="grid">
+          <div className="topic-grid">
             {topics.map((topic) => (
-              <Link className="card card-link" href={`/subjects/${subject.id}/${topic.slug}`} key={topic.id}>
+              <Link className="topic-card" href={`/subjects/${subject.id}/${topic.slug}`} key={topic.id}>
                 <h3>{topic.title}</h3>
-                <p className="muted">{topic.description}</p>
-                <p className="muted">{topic.subtopics.slice(0, 3).join(" • ")}</p>
+                <p>{topic.description}</p>
+                <div className="topic-tags">
+                  {topic.subtopics.slice(0, 3).map((tag) => (
+                    <span className="topic-tag" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </Link>
             ))}
           </div>

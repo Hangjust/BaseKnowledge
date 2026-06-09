@@ -1,0 +1,26 @@
+---
+pid: 14132
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Stop-Process -Id 26996 -Force -ErrorAction SilentlyContinue; Stop-Process -Id 27164 -Force -ErrorAction SilentlyContinue; Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 2; cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\"; npm run dev"
+started_at: 2026-06-09T19:17:42.131Z
+running_for_ms: 5575015  
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 1957ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.5s (621 modules)
+ GET / 200 in 3873ms
+ ○ Compiling /physics ...
+ ✓ Compiled /physics in 714ms (641 modules)
+ GET /physics 200 in 966ms
+ GET /physics 200 in 53ms
+ GET / 200 in 77ms
+

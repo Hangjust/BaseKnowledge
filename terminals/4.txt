@@ -1,0 +1,22 @@
+---
+pid: 26872
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npm run dev"
+started_at: 2026-06-09T16:49:49.358Z
+running_for_ms: 14450014 
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use by process 32008, using available port 3001 instead.
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.56.1:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling /physics ...
+ ✓ Compiled /physics in 1515ms (628 modules)
+ GET /physics 200 in 1896ms
+ GET /physics 200 in 187ms

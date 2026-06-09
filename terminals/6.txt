@@ -1,0 +1,53 @@
+---
+pid: 33196
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\"; if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run dev"
+started_at: 2026-06-09T16:59:00.491Z
+running_for_ms: 13900002 
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 1930ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /physics/[topicSlug]/[mode] ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /physics in 5.9s (641 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /physics/classical-mechanics/learn 200 in 1345ms
+ GET /physics 200 in 4186ms
+ GET /physics/optics/learn 200 in 663ms
+ GET /physics/classical-mechanics/learn 200 in 930ms
+ GET /physics/optics/play 200 in 190ms
+ GET /physics/optics/learn 200 in 115ms
+ GET /physics/classical-mechanics/play 200 in 42ms
+ GET /physics/classical-mechanics/practice 200 in 36ms
+ GET /physics/classical-mechanics/learn 200 in 32ms
+ GET /physics/classical-mechanics/play 200 in 40ms
+ ✓ Compiled /discover in 503ms (663 modules)
+ GET /discover 200 in 617ms
+ ✓ Compiled / in 275ms (660 modules)
+ GET / 200 in 347ms
+ ✓ Compiled /physics in 175ms (422 modules)
+ GET /physics 200 in 257ms
+ GET /discover 200 in 33ms
+ ✓ Compiled /assistant in 342ms (677 modules)
+ GET /assistant 200 in 413ms
+ GET / 200 in 27ms
+ GET /physics 200 in 62ms
+ ✓ Compiled /physics/[topicSlug] in 500ms (675 modules)
+ GET /physics/optics 200 in 1151ms
+ GET /physics/optics/practice 200 in 40ms
+ GET /physics/optics 200 in 39ms
+ ✓ Compiled in 778ms (675 modules)
+ ✓ Compiled in 465ms (675 modules)
+ ✓ Compiled in 270ms (675 modules)
+ ✓ Compiled in 279ms (426 modules)
+ ✓ Compiled in 437ms (675 modules)
+

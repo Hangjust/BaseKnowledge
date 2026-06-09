@@ -49,8 +49,12 @@ When pasting a bcrypt hash into `.env.local`, use the `ADMIN_PASSWORD_HASH=...` 
 
 ## Scripts
 
+- `npm run dev` starts the local development server.
+- `npm start` builds first, then starts the production server locally.
+
 ```bash
 npm run dev
 npm run build
+npm start
 npm test
 ```

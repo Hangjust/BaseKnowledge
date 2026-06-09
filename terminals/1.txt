@@ -1,0 +1,12 @@
+---
+pid: 28740
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Remove-Item -Recurse -Force .next -ErrorAction SilentlyContinue; npm run dev"
+started_at: 2026-06-08T20:03:05.508Z
+running_for_ms: 1020004  
+---
+ParserError: 
+Line |
+   1 |  . move-Item -Recurse -Force .next -ErrorAction SilentlyContinue; npm ru .
+     |                                                                 ~
+     | Missing closing ')' in expression.

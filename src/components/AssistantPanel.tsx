@@ -3,11 +3,12 @@
 import { useState } from "react";
 import { difficultyLevels, type Difficulty, type SubjectId } from "@/lib/types";
 
-const subjects: { id: SubjectId; name: string }[] = [
+const subjectOptions: { id: SubjectId; name: string }[] = [
   { id: "physics", name: "Physics" },
+  { id: "math", name: "Math" },
+  { id: "chemistry", name: "Chemistry" },
   { id: "biology", name: "Biology" },
   { id: "english", name: "English" },
-  { id: "chemistry", name: "Chemistry" },
   { id: "economics", name: "Economics" }
 ];
 
@@ -25,6 +26,7 @@ export default function AssistantPanel({
   const [answer, setAnswer] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [fileName, setFileName] = useState("");
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -42,12 +44,18 @@ export default function AssistantPanel({
       const payload = (await response.json()) as { answer?: string; error?: string };
 
       if (!response.ok) {
-        throw new Error(payload.error ?? "The assistant could not analyze this image.");
+        throw new Error(payload.error ?? "The assistant is not available yet.");
       }
 
       setAnswer(payload.answer ?? "");
-    } catch (caught) {
-      setError(caught instanceof Error ? caught.message : "The assistant could not analyze this image.");
+    } catch {
+      const question = formData.get("question");
+      const mode = formData.get("mode");
+      const subject = formData.get("subjectId");
+
+      setAnswer(
+        `AI preview (backend coming soon)\n\nSubject: ${subject}\nMode: ${mode}\n${fileName ? `File: ${fileName}\n` : ""}${question ? `Question: ${question}\n` : ""}\nOnce your GPT backend is connected, the assistant will analyze uploaded material and respond here with explanations, practice questions, or custom quizzes.`
+      );
     } finally {
       setIsLoading(false);
     }
@@ -55,11 +63,11 @@ export default function AssistantPanel({
 
   return (
     <form className="assistant-form" onSubmit={onSubmit}>
-      <div className={compact ? "form-grid" : "grid"}>
+      <div className={compact ? "form-grid" : "form-grid"}>
         <div className="field">
           <label htmlFor="subjectId">Subject</label>
           <select defaultValue={defaultSubjectId} id="subjectId" name="subjectId">
-            {subjects.map((subject) => (
+            {subjectOptions.map((subject) => (
               <option key={subject.id} value={subject.id}>
                 {subject.name}
               </option>
@@ -90,21 +98,27 @@ export default function AssistantPanel({
       <input name="topicSlug" type="hidden" value={defaultTopicSlug ?? ""} />
 
       <div className="field">
-        <label htmlFor="image">Textbook screenshot</label>
-        <input accept="image/png,image/jpeg,image/webp" id="image" name="image" required type="file" />
+        <label htmlFor="image">Upload notes, screenshots, or PDFs</label>
+        <input
+          accept="image/png,image/jpeg,image/webp,.pdf,.txt"
+          id="image"
+          name="image"
+          onChange={(event) => setFileName(event.target.files?.[0]?.name ?? "")}
+          type="file"
+        />
       </div>
 
       <div className="field">
-        <label htmlFor="question">Question or focus</label>
+        <label htmlFor="question">Your question</label>
         <textarea
           id="question"
           name="question"
-          placeholder="Optional: ask what you want explained, or say what part is confusing."
+          placeholder="What would you like explained? Ask about a concept, problem, or uploaded material."
         />
       </div>
 
       <button className="button" disabled={isLoading} type="submit">
-        {isLoading ? "Analyzing..." : "Analyze screenshot"}
+        {isLoading ? "Thinking..." : "Ask AI"}
       </button>
 
       {error ? <div className="status error">{error}</div> : null}

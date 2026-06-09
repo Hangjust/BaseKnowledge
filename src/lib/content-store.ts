@@ -1,8 +1,11 @@
 import { Collection, MongoServerError } from "mongodb";
-import { seedTopics, subjects } from "./seed-data";
+import { seedTopics } from "./seed-data";
 import { getDb } from "./mongodb";
-import type { Difficulty, PublicTopicSummary, Subject, SubjectId, Topic } from "./types";
+import { getSubject, getSubjects } from "./subjects";
+import type { Difficulty, PublicTopicSummary, SubjectId, Topic } from "./types";
 import { hasMongoConfig } from "./env";
+
+export { getSubject, getSubjects };
 
 const memoryTopics = new Map<string, Topic>(seedTopics.map((topic) => [topic.id, structuredClone(topic)]));
 
@@ -93,14 +96,6 @@ function publicTopic(topic: Topic): PublicTopicSummary {
 
 function sortTopics(a: Topic, b: Topic) {
   return a.title.localeCompare(b.title);
-}
-
-export function getSubjects(): Subject[] {
-  return subjects;
-}
-
-export function getSubject(subjectId: SubjectId): Subject | undefined {
-  return subjects.find((subject) => subject.id === subjectId);
 }
 
 export async function getTopics(): Promise<Topic[]> {

@@ -1,0 +1,19 @@
+---
+pid: 27164
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npm run dev"
+started_at: 2026-06-09T19:17:31.031Z
+running_for_ms: 5590002  
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use by process 26996, using available port 3001 instead.
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.56.1:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+

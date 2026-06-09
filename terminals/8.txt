@@ -1,0 +1,62 @@
+---
+pid: 33508
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Get-NetTCPConnection -LocalPort 3000,3001 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\"; if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run dev"
+started_at: 2026-06-09T19:16:11.708Z
+running_for_ms: 5665004  
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 1828ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3s (621 modules)
+ GET / 200 in 3412ms
+ ○ Compiling /physics ...
+ ✓ Compiled /physics in 648ms (641 modules)
+ GET /physics 200 in 868ms
+ ✓ Compiled /physics/[topicSlug]/[mode] in 352ms (654 modules)
+ GET /physics/optics/learn 200 in 1158ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\server\\app-paths-manifest.json',
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1724ms (1001 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\server\\app-paths-manifest.json',
+  page: '/'
+}
+ GET / 500 in 5044ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\routes-manifest.json'
+}
+ GET / 500 in 298ms
+[Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\routes-manifest.json'
+}
+

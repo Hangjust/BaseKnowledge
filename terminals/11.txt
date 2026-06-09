@@ -1,0 +1,23 @@
+---
+pid: 9888
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npm run dev"
+started_at: 2026-06-09T19:22:04.557Z
+running_for_ms: 5315002  
+---
+
+> baseknowledge@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 1994ms
+ ○ Compiling / ...
+ ✓ Compiled /physics in 3.5s (641 modules)
+ GET /physics 200 in 1491ms
+ GET / 200 in 3945ms
+ GET /physics 200 in 62ms
+

@@ -1,0 +1,29 @@
+---
+pid: 19812
+cwd: "C:\Users\giolu\Documents\BaseKnowledge"
+command: "Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; cd \"C:\\Users\\giolu\\Documents\\BaseKnowledge\" && npm run start"
+started_at: 2026-06-09T19:22:22.435Z
+running_for_ms: 5295009  
+---
+
+> baseknowledge@0.1.0 prestart
+> npm run build
+
+
+> baseknowledge@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.19
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+
+> Build error occurred
+[Error: ENOENT: no such file or directory, open 'C:\Users\giolu\Documents\BaseKnowledge\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\giolu\\Documents\\BaseKnowledge\\.next\\server\\pages-manifest.json'
+}

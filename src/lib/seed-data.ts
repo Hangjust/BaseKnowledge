@@ -35,6 +35,13 @@ export const subjects: Subject[] = [
     description: "Markets, choices, inflation, trade, and financial decision-making.",
     accent: "#0f766e",
     topicIds: ["supply-and-demand"]
+  },
+  {
+    id: "math",
+    name: "Math",
+    description: "Algebra, geometry, calculus, statistics, and problem-solving strategies.",
+    accent: "#7c3aed",
+    topicIds: ["algebra-basics"]
   }
 ];
 
@@ -298,6 +305,18 @@ export const seedTopics: Topic[] = [
     title: "Supply and Demand",
     description: "How markets coordinate choices through prices. Full lessons are coming soon.",
     subtopics: ["Demand curves", "Supply curves", "Equilibrium"],
+    lessons: [],
+    questions: [],
+    isPublished: true,
+    updatedAt: "2026-06-07T00:00:00.000Z"
+  },
+  {
+    id: "algebra-basics",
+    subjectId: "math",
+    slug: "algebra-basics",
+    title: "Algebra Basics",
+    description: "Variables, expressions, equations, and linear relationships. Full lessons are coming soon.",
+    subtopics: ["Variables", "Linear equations", "Graphing"],
     lessons: [],
     questions: [],
     isPublished: true,
