@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "BK BaseKnowledge" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: BK
+          - generic [ref=e7]: BaseKnowledge
+        - generic [ref=e8]:
+          - navigation "Main navigation" [ref=e9]:
+            - link "Discover" [ref=e10] [cursor=pointer]:
+              - /url: /discover
+            - link "Subjects" [ref=e11] [cursor=pointer]:
+              - /url: /#subjects
+            - link "AI Assistant" [ref=e12] [cursor=pointer]:
+              - /url: /assistant
+            - generic "Coming soon": Dashboard
+          - button "Switch to dark mode" [ref=e13] [cursor=pointer]:
+            - img [ref=e14]
+    - generic [ref=e176]:
+      - banner [ref=e177]:
+        - link "⚛ Physics Lab" [ref=e178] [cursor=pointer]:
+          - /url: /physics
+          - generic [ref=e179]: ⚛
+          - generic [ref=e180]: Physics Lab
+        - navigation "Breadcrumb" [ref=e181]:
+          - link "Physics" [ref=e183] [cursor=pointer]:
+            - /url: /physics
+          - generic [ref=e184]:
+            - generic [ref=e185]: ›
+            - generic [ref=e186]: Motion
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: Motion
+        - heading "Motion" [level=1] [ref=e189]
+        - paragraph [ref=e190]: Learn how distance, time, and speed describe motion, then use graphs to compare trips without mixing up fast and far.
+      - generic [ref=e191]:
+        - link "Learn Read the chapter — textbook-style explanations with figures and key terms." [ref=e192] [cursor=pointer]:
+          - /url: /physics/motion/learn
+          - generic [ref=e193]: 📖
+          - heading "Learn" [level=3] [ref=e194]
+          - paragraph [ref=e195]: Read the chapter — textbook-style explanations with figures and key terms.
+        - link "Visualization play Adjust parameters and watch physics happen in real time." [ref=e196] [cursor=pointer]:
+          - /url: /physics/motion/play
+          - generic [ref=e197]: 🎮
+          - heading "Visualization play" [level=3] [ref=e198]
+          - paragraph [ref=e199]: Adjust parameters and watch physics happen in real time.
+        - link "Practice Easier problems — solve on paper or type answers and check your work." [ref=e200] [cursor=pointer]:
+          - /url: /physics/motion/practice
+          - generic [ref=e201]: ✏️
+          - heading "Practice" [level=3] [ref=e202]
+          - paragraph [ref=e203]: Easier problems — solve on paper or type answers and check your work.
+        - link "Exam Harder, exam-style questions. Same format as practice, higher difficulty." [ref=e204] [cursor=pointer]:
+          - /url: /physics/motion/exam
+          - generic [ref=e205]: 📝
+          - heading "Exam" [level=3] [ref=e206]
+          - paragraph [ref=e207]: Harder, exam-style questions. Same format as practice, higher difficulty.
+  - alert [ref=e174]: Motion — Physics Lab

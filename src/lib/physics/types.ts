@@ -19,7 +19,19 @@
  */
 
 /** Slugs for physics topics that have been fully implemented. */
-export type PhysicsTopicSlug = "optics" | "classical-mechanics";
+export type PhysicsTopicSlug =
+  | "optics"
+  | "classical-mechanics"
+  | "motion"
+  | "forces"
+  | "gravity"
+  | "light"
+  | "mirrors-and-reflection"
+  | "electricity"
+  | "heat-temperature"
+  | "sound"
+  | "energy"
+  | "magnetism";
 
 /**
  * The four learning modes every topic must support.
@@ -104,7 +116,18 @@ export type PhysicsTopicMeta = {
   /** Short labels shown as chips on the topic card. */
   subtopics: string[];
   /** Identifier for the mini preview animation on the hub grid. */
-  previewVisualization: "mirror" | "projectile";
+  previewVisualization:
+    | "mirror"
+    | "projectile"
+    | "motion"
+    | "forces"
+    | "gravity"
+    | "light"
+    | "electricity"
+    | "heat"
+    | "sound"
+    | "energy"
+    | "magnetism";
 };
 
 /**

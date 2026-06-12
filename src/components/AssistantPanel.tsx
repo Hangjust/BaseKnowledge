@@ -4,12 +4,14 @@ import { useState } from "react";
 import { difficultyLevels, type Difficulty, type SubjectId } from "@/lib/types";
 
 const subjectOptions: { id: SubjectId; name: string }[] = [
-  { id: "physics", name: "Physics" },
-  { id: "math", name: "Math" },
-  { id: "chemistry", name: "Chemistry" },
   { id: "biology", name: "Biology" },
+  { id: "chemistry", name: "Chemistry" },
+  { id: "computer-science", name: "Computer Science" },
+  { id: "economics", name: "Economics" },
   { id: "english", name: "English" },
-  { id: "economics", name: "Economics" }
+  { id: "history", name: "History" },
+  { id: "math", name: "Math" },
+  { id: "physics", name: "Physics" }
 ];
 
 export default function AssistantPanel({

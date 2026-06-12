@@ -6,12 +6,14 @@ import { subjects } from "@/lib/seed-data";
 import { useInView } from "@/hooks/useInView";
 
 const icons: Record<string, string> = {
-  physics: "⚛",
-  chemistry: "🧪",
   biology: "🧬",
-  math: "∑",
+  chemistry: "🧪",
+  "computer-science": "💻",
+  economics: "📈",
   english: "✎",
-  economics: "📈"
+  history: "📜",
+  math: "∑",
+  physics: "⚛"
 };
 
 const features = [
@@ -363,7 +365,7 @@ export default function DiscoverLanding() {
         <Reveal>
           <div className="discover-stats">
             <div className="discover-stat">
-              <AnimatedCounter target={6} />
+              <AnimatedCounter target={8} />
               <div className="discover-stat-label">Subjects</div>
             </div>
             <div className="discover-stat">

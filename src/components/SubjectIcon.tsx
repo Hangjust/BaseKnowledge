@@ -1,12 +1,14 @@
 import type { SubjectId } from "@/lib/types";
 
 const icons: Record<SubjectId, string> = {
-  physics: "⚛",
-  chemistry: "🧪",
   biology: "🧬",
-  math: "∑",
+  chemistry: "🧪",
+  "computer-science": "💻",
+  economics: "📈",
   english: "✎",
-  economics: "📈"
+  history: "📜",
+  math: "∑",
+  physics: "⚛"
 };
 
 export default function SubjectIcon({

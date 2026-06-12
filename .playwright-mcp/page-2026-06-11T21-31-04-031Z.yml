@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "BK BaseKnowledge" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: BK
+          - generic [ref=e7]: BaseKnowledge
+        - generic [ref=e8]:
+          - navigation "Main navigation" [ref=e9]:
+            - link "Discover" [ref=e10] [cursor=pointer]:
+              - /url: /discover
+            - link "Subjects" [ref=e11] [cursor=pointer]:
+              - /url: /#subjects
+            - link "AI Assistant" [ref=e12] [cursor=pointer]:
+              - /url: /assistant
+            - generic "Coming soon": Dashboard
+          - button "Switch to dark mode" [ref=e13] [cursor=pointer]:
+            - img [ref=e14]
+    - generic [ref=e209]:
+      - banner [ref=e210]:
+        - link "⚛ Physics Lab" [ref=e211] [cursor=pointer]:
+          - /url: /physics
+          - generic [ref=e212]: ⚛
+          - generic [ref=e213]: Physics Lab
+        - navigation "Breadcrumb" [ref=e214]:
+          - link "Physics" [ref=e216] [cursor=pointer]:
+            - /url: /physics
+          - generic [ref=e217]:
+            - generic [ref=e218]: ›
+            - link "Motion" [ref=e219] [cursor=pointer]:
+              - /url: /physics/motion
+          - generic [ref=e220]:
+            - generic [ref=e221]: ›
+            - generic [ref=e222]: Visualization play
+      - generic [ref=e223]:
+        - paragraph [ref=e224]: Motion
+        - heading "Visualization play" [level=1] [ref=e225]
+        - paragraph [ref=e226]: Adjust parameters and watch physics happen in real time.
+      - navigation "Learning modes" [ref=e227]:
+        - link "Learn" [ref=e228] [cursor=pointer]:
+          - /url: /physics/motion/learn
+        - link "Visualization play" [ref=e229] [cursor=pointer]:
+          - /url: /physics/motion/play
+        - link "Practice" [ref=e230] [cursor=pointer]:
+          - /url: /physics/motion/practice
+        - link "Exam" [ref=e231] [cursor=pointer]:
+          - /url: /physics/motion/exam
+      - generic [ref=e232]:
+        - heading "Interactive sandbox" [level=4] [ref=e233]
+        - paragraph [ref=e234]: Set a speed, predict the distance, then press Play. A steeper graph slope means faster motion.
+        - generic [ref=e235]:
+          - generic "Motion track with distance-time graph" [ref=e236]
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - generic [ref=e239]:
+                - generic [ref=e240]: Speed
+                - status "Speed" [ref=e241]: 5.0 m/s
+              - slider [ref=e242]: "5"
+            - generic [ref=e243]:
+              - button "Predict" [ref=e244] [cursor=pointer]
+              - button "Play" [ref=e245] [cursor=pointer]
+            - paragraph [ref=e246]: Set a speed, predict the distance, then press Play. A steeper graph slope means faster motion.
+  - alert [ref=e174]: Motion — Visualization play

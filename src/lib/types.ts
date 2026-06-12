@@ -2,7 +2,15 @@ export const difficultyLevels = ["Basic", "Intermediate", "Advanced"] as const;
 
 export type Difficulty = (typeof difficultyLevels)[number];
 
-export type SubjectId = "biology" | "english" | "physics" | "chemistry" | "economics" | "math";
+export type SubjectId =
+  | "biology"
+  | "chemistry"
+  | "computer-science"
+  | "economics"
+  | "english"
+  | "history"
+  | "math"
+  | "physics";
 
 export type Subject = {
   id: SubjectId;

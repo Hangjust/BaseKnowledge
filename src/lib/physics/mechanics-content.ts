@@ -127,6 +127,15 @@ export const mechanicsContent: PhysicsTopicContent = {
       correctAnswer: "parabola",
       explanation: "Projectile trajectories under constant gravity are parabolic.",
       hint: "A conic section shape."
+    },
+    {
+      id: "mech-pr-4",
+      type: "multiple_choice",
+      prompt: "At the highest point of an ideal projectile's path, what is true of its vertical velocity?",
+      choices: ["It is zero", "It is greatest upward", "It equals the horizontal velocity", "It points upward forever"],
+      correctAnswer: "It is zero",
+      explanation: "At the peak, the vertical component has momentarily decreased to zero before the projectile falls.",
+      hint: "Think about the instant when upward motion changes to downward motion."
     }
   ],
 
@@ -162,6 +171,20 @@ export const mechanicsContent: PhysicsTopicContent = {
         "A car accelerates uniformly from 5 m/s to 25 m/s in 4 s. What is its acceleration in m/s²?",
       correctAnswer: "5",
       explanation: "a = Δv / Δt = (25 − 5) / 4 = 5 m/s²"
+    },
+    {
+      id: "mech-ex-5",
+      type: "multiple_choice",
+      prompt: "Why can horizontal and vertical projectile motion be analyzed separately in the ideal model?",
+      choices: [
+        "Gravity acts vertically, so there is no horizontal acceleration",
+        "Gravity acts only horizontally",
+        "The projectile has no vertical velocity",
+        "Air resistance always cancels gravity"
+      ],
+      correctAnswer: "Gravity acts vertically, so there is no horizontal acceleration",
+      explanation:
+        "Ignoring air resistance, gravity changes vertical velocity but leaves horizontal velocity constant."
     }
   ]
 };

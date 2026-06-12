@@ -1,7 +1,16 @@
 import { z } from "zod";
 import { difficultyLevels } from "./types";
 
-export const subjectIdSchema = z.enum(["biology", "english", "physics", "chemistry", "economics", "math"]);
+export const subjectIdSchema = z.enum([
+  "biology",
+  "chemistry",
+  "computer-science",
+  "economics",
+  "english",
+  "history",
+  "math",
+  "physics"
+]);
 export const difficultySchema = z.enum(difficultyLevels);
 
 export const topicInputSchema = z.object({

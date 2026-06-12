@@ -14,8 +14,18 @@
 
 "use client";
 
+import CircuitBuilderViz from "@/components/physics/visualizations/CircuitBuilderViz";
+import EnergyFlowViz from "@/components/physics/visualizations/EnergyFlowViz";
+import ForcesFrictionViz from "@/components/physics/visualizations/ForcesFrictionViz";
+import GravityOrbitViz from "@/components/physics/visualizations/GravityOrbitViz";
+import HeatTemperatureViz from "@/components/physics/visualizations/HeatTemperatureViz";
+import LightShadowViz from "@/components/physics/visualizations/LightShadowViz";
+import MagnetSandboxViz from "@/components/physics/visualizations/MagnetSandboxViz";
+import MirrorRayViz from "@/components/physics/visualizations/MirrorRayViz";
 import MirrorReflectionViz from "@/components/physics/visualizations/MirrorReflectionViz";
+import MotionTrackViz from "@/components/physics/visualizations/MotionTrackViz";
 import ProjectileMotionViz from "@/components/physics/visualizations/ProjectileMotionViz";
+import SoundWaveViz from "@/components/physics/visualizations/SoundWaveViz";
 import type { PhysicsTopicContent } from "@/lib/physics/types";
 
 export default function TopicLearnView({ topic }: { topic: PhysicsTopicContent }) {
@@ -80,6 +90,26 @@ function resolveVisualization(slug: string) {
       return <MirrorReflectionViz incidenceAngle={35} />;
     case "classical-mechanics":
       return <ProjectileMotionViz launchAngle={45} launchSpeed={20} />;
+    case "motion":
+      return <MotionTrackViz />;
+    case "forces":
+      return <ForcesFrictionViz />;
+    case "gravity":
+      return <GravityOrbitViz />;
+    case "light":
+      return <LightShadowViz />;
+    case "mirrors-and-reflection":
+      return <MirrorRayViz />;
+    case "electricity":
+      return <CircuitBuilderViz />;
+    case "heat-temperature":
+      return <HeatTemperatureViz />;
+    case "sound":
+      return <SoundWaveViz />;
+    case "energy":
+      return <EnergyFlowViz />;
+    case "magnetism":
+      return <MagnetSandboxViz />;
     default:
       return <p className="physics-textbook-paragraph">Figure not configured for this topic.</p>;
   }

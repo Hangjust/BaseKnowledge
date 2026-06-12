@@ -42,6 +42,20 @@ export const subjects: Subject[] = [
     description: "Algebra, geometry, calculus, statistics, and problem-solving strategies.",
     accent: "#7c3aed",
     topicIds: ["algebra-basics"]
+  },
+  {
+    id: "computer-science",
+    name: "Computer Science",
+    description: "Programming, algorithms, data structures, and computational thinking.",
+    accent: "#0ea5e9",
+    topicIds: ["programming-basics"]
+  },
+  {
+    id: "history",
+    name: "History",
+    description: "World events, civilizations, movements, and how the past shapes the present.",
+    accent: "#92400e",
+    topicIds: ["world-history"]
   }
 ];
 

@@ -16,12 +16,35 @@
  * =============================================================================
  */
 
+import { electricityContent } from "./electricity-content";
+import { energyContent } from "./energy-content";
+import { forcesContent } from "./forces-content";
+import { gravityContent } from "./gravity-content";
+import { heatTemperatureContent } from "./heat-temperature-content";
+import { lightContent } from "./light-content";
+import { magnetismContent } from "./magnetism-content";
 import { mechanicsContent } from "./mechanics-content";
+import { mirrorsReflectionContent } from "./mirrors-reflection-content";
+import { motionContent } from "./motion-content";
 import { opticsContent } from "./optics-content";
+import { soundContent } from "./sound-content";
 import type { PhysicsLearningMode, PhysicsTopicContent, PhysicsTopicSlug } from "./types";
 
 /** All implemented physics topics, in display order on the hub page. */
-export const physicsTopics: PhysicsTopicContent[] = [opticsContent, mechanicsContent];
+export const physicsTopics: PhysicsTopicContent[] = [
+  opticsContent,
+  mechanicsContent,
+  motionContent,
+  forcesContent,
+  gravityContent,
+  lightContent,
+  mirrorsReflectionContent,
+  electricityContent,
+  heatTemperatureContent,
+  soundContent,
+  energyContent,
+  magnetismContent
+];
 
 /** Human-readable labels for the four learning modes (used in nav + cards). */
 export const modeLabels: Record<PhysicsLearningMode, { title: string; description: string }> = {
